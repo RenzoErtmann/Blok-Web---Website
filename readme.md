@@ -62,9 +62,12 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Je opdracht:** https://www.psv.nl/psv/home.htm
 
-**Screenshot(s):** (images/screenshot1.png)
-(images/screenshot2.png) (images/screenshot3.png)
+**Screenshot(s):** 
+![Screenshot 1](images/screenshot1.png)
+![Screenshot 2](images/screenshot2.png) 
+![Screenshot 3](images/screenshot3.png)
 
 **Breakdown-schets(en):**
-(images/breakdown_schets_stap2.png)
-(images/breakdown_schets_stap3.png)
+![Breakdown schets stap 2](images/breakdown_schets_stap2.png)
+
+![Breakdown schets stap 3](images/breakdown_schets_stap3.png)
