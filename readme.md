@@ -39,14 +39,21 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ### Stand van zaken
 
 -dit ging goed & dit was lastig-
+Het is mij gelukt om de start pagina van psv.nl te maken. Ik had veel moeite om de footer netjes te krijgen maar door de functies 'first-of-type' en 'last-of-type' te gebruiken is het mij toch gelukt. Ik kijk er erg trots op terug. Nu komt de grootste uitdaging en dat is de homepage van psv.nl na te maken.
 
 **Screenshot(s):**
+![Screenshot 1 voortgang 1](images/screenshot1voortgang1.png)
+![Screenshot 2 voortgang 1](images/screenshot2voortgang1.png) 
+![Screenshot 2 voortgang 1](images/screenshot2voortgang1.png) 
 
 -screenshot(s) van hoe ver je bent-
+![Screenshot 1 update 1](images/screenshot1update1.png) 
+![Screenshot 2 update 1](images/screenshot2update1.png) 
 
 ### Agenda voor meeting
 
 -samen met je groepje opstellen-
+Mijn team en ik hadden geen idee wat wij hier moesten invullen. Ik wil graag tijdens de meeting hulp voor 2 kleine puntjes voor mijn code.
 
 ### Verslag van meeting
 
