@@ -55,15 +55,36 @@ p {
 
 footer {
     display: flex;
+    flex-direction: column;
     background-color: #000000;
     width: 375px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
+footer section:first-of-type {
+    display: flex;
+    margin-bottom: 1.2em;
+}
+
+footer section:first-of-type ul {
+    width: 50%;
+}
+
+footer section:first-of-type ul li {
+    display: flex;
+    list-style-type: none;
+}
+
+footer section:first-of-type ul li img {
+    margin-top: 14px;
+    max-height: 30px;
+    max-width: 50%;
+}
+
 #TopLinks {
     width: 50%;
-
+    flex-direction: column;
 }
 
 footer img {
@@ -74,42 +95,27 @@ footer img {
     margin-top: 55px
 }
 
-#TopRechts {
-    width: 50%;
+footer section:last-of-type {
+    padding-top: 20px;
+    border-top: 1px solid #808080;
+    width: 95%;
+    margin: 0 .6em;
 }
 
-#TopRechts ul li {
+footer section:last-of-type ul {
     display: flex;
-    list-style-type: none;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
-#TopRechts ul li img {
-    margin-top: 14px;
-    max-height: 30px;
-    max-width: 50%;
+footer section:last-of-type ul li {
+    flex-basis: 33%
 }
 
-#TopRechts:last-of-type ul li img:first-of-type {
-    justify-content: flex-start;
-    height: 16px;
-    width: 16px;
-    margin-left: 0;
-}
-
-#TopRechts:last-of-type ul li img:last-of-type {
-    justify-content: flex-end;
-    height: 30px;
-    padding-left: 20px;
-    margin-top: 7.5px;
-    margin-bottom: 7.5px;
-}
-
-#Bottom {}
-
-#Bottom ul li img {
+footer section:last-of-type ul li img {
     height: 64px;
-    width: 50px;
-    margin-top: 14px;
+    width: 60px;
+    margin: .5em 1.7em 2em;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
