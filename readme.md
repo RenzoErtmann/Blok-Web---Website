@@ -44,7 +44,7 @@ Het is mij gelukt om de start pagina van psv.nl te maken. Ik had veel moeite om 
 **Screenshot(s):**
 ![Screenshot 1 voortgang 1](images/screenshot1voortgang1.png)
 ![Screenshot 2 voortgang 1](images/screenshot2voortgang1.png) 
-![Screenshot 2 voortgang 1](images/screenshot2voortgang1.png) 
+
 
 -screenshot(s) van hoe ver je bent-
 ![Screenshot 1 update 1](images/screenshot1update1.png) 
