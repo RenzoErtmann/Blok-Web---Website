@@ -53,7 +53,7 @@ Het is mij gelukt om de start pagina van psv.nl te maken. Ik had veel moeite om 
 ### Agenda voor meeting
 
 -samen met je groepje opstellen-
-Mijn team en ik hadden geen idee wat wij hier moesten invullen. Ik wil graag tijdens de meeting hulp voor 2 kleine puntjes voor mijn code.
+Ik wil graag tijdens de meeting beginnen met het kijken naar mijn code. Ik heb een vraag over Javascript. Ik wil graag een dia slideshow maken van de reclames die in beeld komen. Verder heb ik 1 vraag over, hoe ik het beste mijn navigatie bar kan maken.
 
 ### Verslag van meeting
 
