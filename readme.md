@@ -1,8 +1,5 @@
 # Procesverslag
-**Auteur:** -jouw naam-
-
-Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
-
+**Auteur:** -Renzo Ertmann-
 
 
 ## Bronnenlijst
@@ -30,7 +27,28 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+
+### Stand van zaken
+
+-dit ging goed & dit was lastig-
+Ik ben deze week begonnen met het maken van de tweede pagina. Ik had vorige week de eerste pagina afgerond. Deze week had ik de challenge om een nieuwe navigatiebar te maken, en dat is mij na paar uur stoeien met de code aardig gelukt. Ook Heb ik een Javascript toegevoegd, omdat de tweede pagina 5 afbeeldingen moet vervangen om de 8 seconden. Ik ben erg blij dat het mij is gelukt om de navigatiebar af te krijgen. Ik ben daar heel erg trots op.
+
+**Screenshot(s):**
+![Screenshot 1 voortgang 2](images/screenshot1voortgang2.png)
+![Screenshot 1 voortgang 2](images/screenshot1voortgang2.png) 
+
+-screenshot(s) van hoe ver je bent-
+![Sceenshot 1 update 2](images/screenshot1update2.png) 
+
+
+### Agenda voor meeting
+![Planning 2](images/Planning2.png) 
+
+
+### Verslag van meeting
+
+-na afloop snel uitkomsten vastleggen-
+...
 
 
 
@@ -45,19 +63,19 @@ Het is mij gelukt om de start pagina van psv.nl te maken. Ik had veel moeite om 
 ![Screenshot 1 voortgang 1](images/screenshot1voortgang1.png)
 ![Screenshot 2 voortgang 1](images/screenshot2voortgang1.png) 
 
-
 -screenshot(s) van hoe ver je bent-
 ![Screenshot 1 update 1](images/screenshot1update1.png) 
 ![Screenshot 2 update 1](images/screenshot2update1.png) 
 
-### Agenda voor meeting
 
--samen met je groepje opstellen-
-Ik wil graag tijdens de meeting beginnen met het kijken naar mijn code. Ik heb een vraag over Javascript. Ik wil graag een dia slideshow maken van de reclames die in beeld komen. Verder heb ik 1 vraag over, hoe ik het beste mijn navigatie bar kan maken.
+### Agenda voor meeting
+![Planning 1](images/Planning1.png) 
+
 
 ### Verslag van meeting
 
 -na afloop snel uitkomsten vastleggen-
+Ik had niet zo heel veel vragen, maar ik op de vraag die ik stelde kreeg ik duideluik antwoord. Ik heb een link gekregen om een Javascript interval te gaan maken.
 
 
 
