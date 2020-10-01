@@ -42,7 +42,7 @@ Ik ben deze week begonnen met het maken van de tweede pagina. Ik had vorige week
 
 
 ### Agenda voor meeting
-![Planning 2](images/Planning2.png) 
+![Planning 2](images/Planning2.jpeg) 
 
 
 ### Verslag van meeting
