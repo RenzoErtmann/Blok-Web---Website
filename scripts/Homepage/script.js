@@ -2,39 +2,37 @@
 /*eslint-env browser*/
 /*eslint 'no-console':0*/
 
-// het nummer in de fotolijst dat nu getoond wordt
-var fotoNummer = 0;
+var hamburgerMenu = document.querySelector("nav img:first-of-type");
 
-// het tempo van de wisseling in milliseconde
+var hamburgerMenulijst = document.querySelector("header ul");
+
+var inlogMenu = document.querySelector("header ul:nth-of-type(2)")
+
+var inlogMenuIcon = document.querySelector("nav img:nth-of-type(2)");
+
+var keuzeTalen = document.querySelector("header ul:nth-of-type(3)")
+
+var keuzeTalenIcon = document.querySelector("nav img:nth-of-type(5")
+
+
+var fotoNummer = 0;
 var tempo = 8000;
 
-// de lijst met foto's
-// het is een array met object
-// elk object heeft een url en een alt-text
-// je kunt de lijst uitbreiden met meer foto's
+
 var fotolijst = [
     {
-        "source": "https://www.psv.nl/upload_mm/e/e/6/cid76784_200919PZ18332_980x480.jpg",
+        "source": "https://www.psv.nl/upload_mm/f/3/6/cid76920_Kop%20Gakpo-Hersteld-Hersteld-Hersteld_980x480.jpg",
         "altText": "PSV reclame 1"
   },
     {
-        "source": "https://www.psv.nl/upload_mm/e/0/2/cid76787_Kop%20Gakpo-Hersteld-Hersteld-Hersteld_980x480.jpg",
+        "source": "https://www.psv.nl/upload_mm/8/0/4/cid76897_ANNOUNCEMENTS_NIEUWS_PSV%20NL_Marco%20van%20Ginkel_980x480.jpg",
         "altText": "PSV reclame 2"
   },
     {
-        "source": "https://www.psv.nl/upload_mm/f/8/7/cid76785_Boscagli980x480_980x480.jpg",
+        "source": "https://www.psv.nl/upload_mm/8/0/e/cid76910_201006PZ42972_980x480.jpg",
         "altText": "PSV reclame 3"
-  },
-    {
-        "source": "https://www.psv.nl/upload_mm/2/1/1/cid76779_0890_NIEUWS_PSV%20NL_Website%20vh%20Jaar%202020_980x480.jpg",
-        "altText": "PSV reclame 4"
-  },
-    {
-        "source": "https://www.psv.nl/upload_mm/2/1/2/cid76781_18073_980x480.jpg",
-        "altText": "PSV reclame 5"
   }
 ];
-
 
 function startTimer() {
     // in de functie wordt een timer gestart
@@ -51,9 +49,9 @@ function startTimer() {
         if (fotoNummer >= fotolijst.length) {
             fotoNummer = 0;
         }
-        // de source van de foto veranderen
+
         deFoto.src = fotolijst[fotoNummer].source;
-        // de alt tekst van de foto veranderen
+
         deFoto.alt = fotolijst[fotoNummer].altText;
 
         // de functie startTimer opnieuw aanroepen
@@ -61,7 +59,24 @@ function startTimer() {
         startTimer();
     }, tempo);
 }
-
-
-// de functie startTimer aanroepen
 startTimer();
+
+function klapOpen() {
+    hamburgerMenulijst.classList.toggle("active");
+}
+
+hamburgerMenu.addEventListener("click", klapOpen);
+
+
+function inlogOpen() {
+    inlogMenu.classList.toggle("active");
+}
+
+inlogMenuIcon.addEventListener("click", inlogOpen);
+
+
+function talenOpen() {
+    keuzeTalen.classList.toggle("active");
+}
+
+keuzeTalenIcon.addEventListener("click", talenOpen);

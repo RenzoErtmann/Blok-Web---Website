@@ -4,22 +4,26 @@
 }
 
 
-/*Header*/
+/*HEADER*/
 
+/*navigatie bar*/
 nav {
     background-color: #000000;
-    width: 100%;
+    width: 375px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
 }
 
+/*hamburgermenu image*/
 nav img:first-of-type {
     width: 50px;
     height: 60px;
 }
 
+/*inlogmenu image*/
 nav img:nth-of-type(2) {
     width: 45px;
     height: 50px;
@@ -30,8 +34,10 @@ nav img:nth-of-type(3) {
     height: 50px;
 }
 
+/*psv logo*/
 nav img:nth-of-type(4) {
     display: block;
+    position: relative;
     z-index: 2;
     margin-top: 5%;
     width: 73.531px;
@@ -40,6 +46,7 @@ nav img:nth-of-type(4) {
     margin-right: 30.734px;
 }
 
+/*talenmenu image*/
 nav img:nth-of-type(5) {
     width: 44px;
     height: 50px;
@@ -50,13 +57,14 @@ nav img:nth-of-type(6) {
     height: 50px;
 }
 
+/*zoekicon image*/
 nav img:nth-of-type(7) {
     width: 60px;
     height: 50px;
 }
 
 
-/*Main*/
+/*MAIN*/
 
 body {
     background-color: #eeeeee;
@@ -67,19 +75,98 @@ main {
     width: 375px;
     height: 186px;
     display: flex;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/*hamburgermenu*/
+header ul {
+    top: 50px;
+    position: fixed;
+    width: 280px;
+    list-style-type: none;
+    background: #262626;
+    transition: 300ms;
+    transform: translateX(-100%);
+}
+
+header ul.active {
+    transform: translateX(0);
+}
+
+header ul li {
+    padding: 1em;
+}
+
+header ul li:nth-of-type(n+4) {
+    border-top: 1px solid #FFFFFF;
+    z-index: 1;
+}
+
+header ul li a {
+    color: #FFFFFF;
+    font-family: Klavika;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/*rode tekst home*/
+header ul:first-of-type li:nth-of-type(4) a {
+    color: red;
+}
+
+/*inlogkeuze*/
+header ul:nth-of-type(2) {
+    height: unset;
+    width: 186.58px;
+}
+
+header ul:nth-of-type(2) li {
+    border-top: none;
+}
+
+header ul:nth-of-type(2) li a {
+    text-transform: capitalize;
+}
+
+/*talenkeuze*/
+
+header ul:nth-of-type(3) {
+    height: unset;
+    width: 160px;
+    right: 0;
+    transform: translateX(100%);
+}
+
+header ul.active:nth-of-type(3) {
+    transform: translateX(0);
+}
+
+header ul:nth-of-type(3) li {
+    border-top: none;
+    right: 0;
+}
+
+header ul:nth-of-type(3) li a {
+    text-transform: capitalize;
+    right: 0;
+}
+
+/*rode tekst talen*/
+header ul:nth-of-type(3) li:first-of-type a {
+    color: red;
+}
+
+/*reclame met 3 foto's*/
 main section img:first-of-type {
     display: flex;
     width: 375px;
     height: 186.67px;
     margin-bottom: 20px;
-    margin-top: 60px;
+    margin-top: 160px;
 }
 
+/*gifje onder de reclame */
 main section img:nth-of-type(2) {
     width: 335px;
     height: 37.766;
@@ -88,23 +175,34 @@ main section img:nth-of-type(2) {
 }
 
 
-/*Footer*/
+/*FOOTER*/
 
 footer {
     display: flex;
     flex-direction: column;
     background-color: #000000;
     width: 375px;
-    margin-top: 20%;
+    margin-top: 70%;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
+/*reclameblok 1 en 2*/
 footer section:first-of-type {
     display: flex;
     margin-bottom: 1.2em;
 }
 
+/*reclameblok 1, 1 sponsor*/
+footer img {
+    width: 132.55px;
+    height: 160px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 55px
+}
+
+/*reclameblok 2, 6 sponsors*/
 footer section:first-of-type ul {
     width: 50%;
 }
@@ -120,37 +218,25 @@ footer section:first-of-type ul li img {
     max-width: 50%;
 }
 
-#TopLinks {
-    width: 50%;
-    flex-direction: column;
-}
-
-footer img {
-    width: 132.55px;
-    height: 160px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 55px
-}
-
-footer section:last-of-type {
+/*reclameblok3, 9 sponsors*/
+footer section:nth-of-type(2) {
     padding-top: 20px;
     border-top: 1px solid #808080;
     width: 95%;
     margin: 0 .6em;
 }
 
-footer section:last-of-type ul {
+footer section:nth-of-type(2) ul {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
 
-footer section:last-of-type ul li {
+footer section:nth-of-type(2) ul li {
     flex-basis: 33%
 }
 
-footer section:last-of-type ul li img {
+footer section:nth-of-type(2) ul li img {
     height: 64px;
     width: 60px;
     margin: .5em 1.7em 2em;
@@ -158,4 +244,33 @@ footer section:last-of-type ul li img {
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
+}
+
+/*reclameblok4, 2 sponsors*/
+footer section:nth-of-type(3) ul {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+footer section:nth-of-type(3) ul li {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: Helvetica, Arial, sans-serif;
+    display: flex;
+    list-style-type: none;
+}
+
+footer section:nth-of-type(3) ul li:nth-of-type(2) img {
+    margin-top: 10px;
+    margin-left: 0;
+    width: 140px;
+    height: 41.56px;
+}
+
+footer section:nth-of-type(3) ul li:nth-of-type(3) img {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 0;
+    width: 140px;
+    height: 41.56px;
 }

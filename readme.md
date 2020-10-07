@@ -21,7 +21,30 @@
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+
+
+### Stand van zaken
+
+-dit ging goed & dit was lastig-
+Ik heb deze week erg veel gestoeid met mijn navigatie bar. Ik had van Sanne een stukje code gekregen om een animatie te maken, maar die had mijn laptop helaas niet opgeslagen. Ik heb tot twee keer aan toe de code opniew moeten maken, maar nu ben ik erg blij met mijn resultaat. Ik heb af wat ik af wou hebben.
+
+**Screenshot(s):**
+![Screenshot 1 voortgang 3](images/screenshot1voortgang3.png)
+![Screenshot 2 voortgang 3](images/screenshot2voortgang3.png) 
+
+-screenshot(s) van hoe ver je bent-
+![Sceenshot 1 update 3](images/screenshot1update3.png) 
+![Sceenshot 2 update 3](images/screenshot2update3.png) 
+
+
+### Agenda voor meeting
+![Planning 3](images/Planning3.png) 
+
+
+### Verslag van meeting
+
+-na afloop snel uitkomsten 
+...
 
 
 
@@ -35,7 +58,7 @@ Ik ben deze week begonnen met het maken van de tweede pagina. Ik had vorige week
 
 **Screenshot(s):**
 ![Screenshot 1 voortgang 2](images/screenshot1voortgang2.png)
-![Screenshot 1 voortgang 2](images/screenshot1voortgang2.png) 
+![Screenshot 2 voortgang 2](images/screenshot2voortgang2.png) 
 
 -screenshot(s) van hoe ver je bent-
 ![Sceenshot 1 update 2](images/screenshot1update2.png) 
@@ -48,7 +71,7 @@ Ik ben deze week begonnen met het maken van de tweede pagina. Ik had vorige week
 ### Verslag van meeting
 
 -na afloop snel uitkomsten vastleggen-
-...
+Ik heb antwoorden gekregen op de vragen die ik had. Sanne had me geholpen met een stukje code en daar ben ik erg blij mee. Vanaf deze week ga ik stoeien om een hamburgermenu te kruigen die werkt.
 
 
 
