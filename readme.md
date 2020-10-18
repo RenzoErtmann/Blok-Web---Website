@@ -29,8 +29,7 @@ Afgelopen vrijdag had ik gelukkig een gesprek met Sanne, en ik kwam er achter da
 ![Screenshot 4 pagina 2](images/screenshot4pagina2eindgesprek.png)
 ![Screenshot 5 pagina 2](images/screenshot5pagina2eindgesprek.png)
 ![Screenshot 6 pagina 2](images/screenshot6pagina2eindgesprek.png)
-![Screenshot 7 pagina 2](images/![Screenshot 6 pagina 2](images/screenshot6pagina2eindgesprek.png)
-.png)
+![Screenshot 7 pagina 2](images/screenshot7pagina2eindgesprek.png)
 ![Screenshot 8 pagina 2](images/screenshot8pagina2eindgesprek.png)
 
 
