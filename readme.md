@@ -3,19 +3,35 @@
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
+1. Sanne voor de Timeout functie.
+2. Jody Lorist heeft geholpen met het debuggen van mijn footer en met de navbar.
+3. Bas Vugts heeft me geholpen met het debuggen van de code
 
 
 
 ## Eindgesprek (week 7/8)
 
 -dit ging goed & dit was lastig-
+Afgelopen vrijdag had ik gelukkig een gesprek met Sanne, en ik kwam er achter dat ik nog veel moest doen. Mijn ontwerp was alleen voor de Iphone 11 Pro Max beschikbaar, maar ik heb het dit weekend responsive gemaakt voor alle Iphone modellen. Het is me gelukkig gelukt om het af te krijgen.
 
 **Screenshot(s):**
 
 -screenshot(s) van je eindresultaat-
+
+-pagina 1:
+![Screenshot 1 pagina 1](images/screenshot1pagina1eindgesprek.png) 
+![Screenshot 2 pagina 1](images/screenshot2pagina1eindgesprek.png) 
+
+-pagina 2:
+![Screenshot 1 pagina 2](images/screenshot1pagina2eindgesprek.png) 
+![Screenshot 2 pagina 2](images/screenshot2pagina2eindgesprek.png)
+![Screenshot 3 pagina 2](images/screenshot3pagina2eindgesprek.png)
+![Screenshot 4 pagina 2](images/screenshot4pagina2eindgesprek.png)
+![Screenshot 5 pagina 2](images/screenshot5pagina2eindgesprek.png)
+![Screenshot 6 pagina 2](images/screenshot6pagina2eindgesprek.png)
+![Screenshot 7 pagina 2](images/![Screenshot 6 pagina 2](images/screenshot6pagina2eindgesprek.png)
+.png)
+![Screenshot 8 pagina 2](images/screenshot8pagina2eindgesprek.png)
 
 
 

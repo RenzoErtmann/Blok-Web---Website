@@ -3,91 +3,54 @@
     Padding: 0;
 }
 
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
 
 /*HEADER*/
 
-/*navigatie bar*/
 nav {
+    width: 100%;
+    height: 3.125em;
+    top: 0;
     background-color: #000000;
-    width: 375px;
-    height: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
+    z-index: 1;
 }
 
-/*hamburgermenu image*/
-nav img:first-of-type {
-    width: 50px;
-    height: 60px;
+/*logo's in de navbar*/
+nav img {
+    max-width: 3em;
 }
 
-/*inlogmenu image*/
-nav img:nth-of-type(2) {
-    width: 45px;
-    height: 50px;
-}
-
-nav img:nth-of-type(3) {
-    width: 15px;
-    height: 50px;
-}
-
-/*psv logo*/
+/*logo psv*/
 nav img:nth-of-type(4) {
-    display: block;
-    position: relative;
-    z-index: 2;
-    margin-top: 5%;
-    width: 73.531px;
-    height: 60px;
-    margin-left: 40.734px;
-    margin-right: 30.734px;
+    max-width: 4em;
+    margin: 1em 1em 0 1em;
 }
 
-/*talenmenu image*/
-nav img:nth-of-type(5) {
-    width: 44px;
-    height: 50px;
-}
-
+/*pijltjes naast de uitklapbare icoontjes*/
+nav img:nth-of-type(3),
 nav img:nth-of-type(6) {
-    width: 16px;
-    height: 50px;
+    width: 1em;
 }
 
-/*zoekicon image*/
-nav img:nth-of-type(7) {
-    width: 60px;
-    height: 50px;
+/*interacties header*/
+header {
+    width: 100%;
 }
 
-
-/*MAIN*/
-
-body {
-    background-color: #eeeeee;
-    width: 375px;
-}
-
-main {
-    width: 375px;
-    height: 186px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/*hamburgermenu*/
 header ul {
-    top: 50px;
     position: fixed;
-    width: 280px;
-    list-style-type: none;
     background: #262626;
     transition: 300ms;
     transform: translateX(-100%);
+    list-style-type: none;
 }
 
 header ul.active {
@@ -98,27 +61,33 @@ header ul li {
     padding: 1em;
 }
 
-header ul li:nth-of-type(n+4) {
-    border-top: 1px solid #FFFFFF;
-    z-index: 1;
-}
-
 header ul li a {
-    color: #FFFFFF;
     font-family: Klavika;
     text-transform: uppercase;
+    color: #FFFFFF;
     text-decoration: none;
+}
+
+/*witte lijnen bij hamburgermenu open*/
+header ul li:nth-of-type(n+4) {
+    border-top: 0.0625em solid #FFFFFF;
+}
+
+/*hamburgermenu*/
+header ul:first-of-type {
+    height: unset;
+    width: 70%;
 }
 
 /*rode tekst home*/
 header ul:first-of-type li:nth-of-type(4) a {
-    color: red;
+    color: #FF0000;
 }
 
-/*inlogkeuze*/
+/*inloggen*/
 header ul:nth-of-type(2) {
     height: unset;
-    width: 186.58px;
+    width: 50%;
 }
 
 header ul:nth-of-type(2) li {
@@ -129,11 +98,10 @@ header ul:nth-of-type(2) li a {
     text-transform: capitalize;
 }
 
-/*talenkeuze*/
-
+/*talen*/
 header ul:nth-of-type(3) {
     height: unset;
-    width: 160px;
+    width: 40%;
     right: 0;
     transform: translateX(100%);
 }
@@ -143,134 +111,564 @@ header ul.active:nth-of-type(3) {
 }
 
 header ul:nth-of-type(3) li {
-    border-top: none;
     right: 0;
+    border-top: none;
 }
 
 header ul:nth-of-type(3) li a {
     text-transform: capitalize;
-    right: 0;
 }
 
 /*rode tekst talen*/
 header ul:nth-of-type(3) li:first-of-type a {
-    color: red;
+    color: #FF0000;
+}
+
+
+/*MAIN*/
+
+main {
+    width: 100%;
+    margin-top: 3.125em;
+    display: flex;
+    flex-direction: column;
+}
+
+main > * {
+    width: 100%;
+    padding: 0 .625em 0 .625em;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
 }
 
 /*reclame met 3 foto's*/
-main section img:first-of-type {
-    display: flex;
-    width: 375px;
-    height: 186.67px;
-    margin-bottom: 20px;
-    margin-top: 160px;
+main > section:first-of-type {
+    width: 100%;
+    padding: 0;
 }
 
-/*gifje onder de reclame */
-main section img:nth-of-type(2) {
-    width: 335px;
-    height: 37.766;
-    margin-left: 20px;
-    margin-right: 20px;
+main > section:first-of-type div {
+    width: 100%;
+    margin-bottom: 1.25em;
+    position: relative;
+    z-index: -100;
+}
+
+main > section:first-of-type div img {
+    width: 100%;
+    display: flex;
+}
+
+/*tekst op reclame*/
+main > section:first-of-type div p {
+    font-family: Arial, Bold;
+    font-size: 1.25em;
+    color: #ffffff;
+    background-color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+    max-width: calc(100% - 2.75em);
+    bottom: 1.25em;
+    left: 1.25em;
+    padding: 0.125em;
+    margin: 0;
+    position: absolute;
+}
+
+/*gifje onder de reclame*/
+main > section:first-of-type > img {
+    height: 2.361em;
+    margin: 0 1.25em;
+}
+
+/*wedstrijden*/
+main section:nth-of-type(2) > div:first-of-type {
+    border-top: 0.0625em solid #808080;
+    border-bottom: 0.0625em solid #808080;
+    margin: 0.625em 0 1.25em 0;
+}
+
+main div:first-of-type ul {
+    margin: 0.625em;
+    list-style: none;
+}
+
+main div:first-of-type p {
+    margin: 0.625em;
+}
+
+/*tekst boven de logo's*/
+main div:first-of-type ul:first-of-type {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*eredivisie tekst*/
+main div ul li:first-of-type p {
+    margin: 0;
+    display: inline;
+}
+
+main div ul li:first-of-type {
+    font-family: Klavika;
+    font-size: 1em;
+}
+
+/*wedstrijd tekst*/
+main div ul li:nth-of-type(2) {
+    font-family: Klavika;
+    font-size: 1em;
+}
+
+/*logo clubs*/
+main div ul:nth-of-type(2) {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*streep tussen de logo's*/
+main div ul:nth-of-type(2) li:nth-of-type(2) img {
+    height: 4em;
+    width: 0.875em;
+}
+
+/*tekst onder de logo's van de clubs*/
+main div p {
+    font-family: Klavika;
+    font-size: 1em;
+    color: #ED1C24;
+}
+
+/*artikelen*/
+main section article {
+    display: flex;
+    flex-direction: column;
+    justify-content:
+}
+
+main section article > img {
+    width: 100%;
+    margin-top: 1.75em;
+    order: 1;
+}
+
+/*kopje 1 rugnummers*/
+main section article:first-of-type h3 {
+    font-family: Arial, Bold;
+    font-size: 1.875em;
+    margin-top: 1.25em;
+}
+
+/*tekst onder kopje 1*/
+main section article p {
+    width: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.0625em;
+    color: #808080;
+    margin: 1.25em 0 1em 0;
+    order: 3;
+}
+
+/*kopjes artikelen*/
+main section article h3 {
+    font-family: Helvetica, sans-serif;
+    font-size: 1.0625em;
+    color: #262626;
+    margin: 0.75em;
+    order: 2;
+}
+
+/*informatie onder de artikelen*/
+main section article ul {
+    display: flex;
+    order: 4;
+}
+
+/*icoontje van artikel*/
+main section article ul li img {
+    width: 1.0625em;
+    height: 0.875em;
+    margin: 0 0.9375em 0 0.625em;
+}
+
+/*laatste icoontje omnder artikel*/
+main section article:nth-of-type(7) ul li img {
+    margin-bottom: 0.875em;
+}
+
+main section article ul li {
+    list-style: none;
+}
+
+/*tekst naast icoontje*/
+main section article ul li:nth-of-type(2) {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.75em;
+    color: #808080;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*tekst naast het genre*/
+main section article ul li:nth-of-type(3) {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.8125em;
+    color: #808080;
+}
+
+/*reclame onder de artikelen*/
+main section:nth-of-type(3) img {
+    width: 75%;
+    margin-bottom: 1em;
+}
+
+/*agenda*/
+aside {
+    width: 100%;
+}
+
+aside h1 {
+    width: 100%;
+    font-family: Klavika;
+    font-size: 1.0625em;
+    color: #FFFFFF;
+    background: #000000;
+    padding: 0.9375em 0;
+    text-align: center;
+}
+
+aside ul {
+    padding: 0;
+    margin: 1.25em 0;
+}
+
+aside button {
+    width: 100%;
+    font-family: Klavika;
+    font-size: 1.0625em;
+    color: #FFFFFF;
+    background-color: #ED1C24;
+    border: none;
+    padding: 0.9375em 0;
+    margin-bottom: 3em;
+    text-align: center;
+}
+
+aside ul li {
+    padding: 1em 0;
+    border-bottom: 0.0625em solid rgba(100, 100, 100, 0.2);
+    display: flex;
+}
+
+/*ruimte tussen data en wedstrijd*/
+aside ul li section {
+    margin-left: 1.25em;
+}
+
+aside ul li p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.8125em;
+    color: #B3B3B3;
+}
+
+/*wedstrijden*/
+aside ul li section a {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.8125em;
+    color: #808080;
+    text-decoration: none;
+}
+
+/*psv fanstore artikelen*/
+main section:nth-of-type(4) ul {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/*tekst onder product*/
+main section:nth-of-type(4) p {
+    font-family: Klavika;
+    font-size: 1.0625em;
+    margin-bottom: 1.875em;
+    font-weight: bold;
+    text-align: center;
+}
+
+main section:nth-of-type(4) ul li {
+    list-style: none;
+}
+
+main section:nth-of-type(4) ul li img {
+    width: 11.09375em;
+    height: 11.09375em;
+}
+
+main section:nth-of-type(4) ul li p:first-of-type {
+    width: 11.09375em;
+    font-family: Helvetica, Arial, ;
+    font-size: 1em;
+    color: #808080;
+    margin-bottom: 0;
+}
+
+/*tekst prijs onderste rij*/
+main section:nth-of-type(4) ul li p:nth-of-type(2) {
+    font-family: Helvetica;
+    font-size: 1em;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 2.8125em;
+}
+
+/*ruimte onder de onderste rij*/
+main section:nth-of-type(4) ul li:nth-of-type(3) p:nth-of-type(2) {
+    margin-bottom: 1.25em;
+}
+
+main section:nth-of-type(4) ul li:nth-of-type(4) p:nth-of-type(2) {
+    margin-bottom: 1.25em;
+}
+
+/*statistieken*/
+main section:nth-of-type(5) {
+    background-color: #EEEEEE;
+}
+
+main section:nth-of-type(5) p {
+    font-family: Klavika;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 0.275em;
+}
+
+main section:nth-of-type(5) ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+/*cijfers*/
+main section:nth-of-type(5) ul li p:first-of-type {
+    font-family: Klavika;
+    font-size: 5.625em;
+    text-align: center;
+    margin-top: 0;
+}
+
+/*tekst goals en wedstrijden*/
+main section:nth-of-type(5) ul li p:nth-of-type(2) {
+    font-family: Klavika;
+    font-size: 1.1875em;
+    color: #B3B3B3;
+    margin-top: 0.75em;
+    margin-bottom: 2.5em;
 }
 
 
 /*FOOTER*/
 
 footer {
+    width: 100;
+    background-color: #000000;
+    padding-top: 1.2em;
     display: flex;
     flex-direction: column;
-    background-color: #000000;
-    width: 375px;
-    margin-top: 70%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    list-style-type: none;
 }
 
-/*reclameblok 1 en 2*/
+/*sponsor blok 1*/
 footer section:first-of-type {
-    display: flex;
+    width: 100%;
     margin-bottom: 1.2em;
+    display: flex;
+    justify-content: center;
 }
 
-/*reclameblok 1, 1 sponsor*/
-footer img {
-    width: 132.55px;
-    height: 160px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 55px
+footer section:first-of-type ul li img {
+    max-height: 1.875em;
+    margin-top: 0.875em;
 }
 
-/*reclameblok 2, 6 sponsors*/
+/*brainport eindhoven logo*/
 footer section:first-of-type ul {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 footer section:first-of-type ul li {
     display: flex;
-    list-style-type: none;
+    justify-content: center;
 }
 
-footer section:first-of-type ul li img {
-    margin-top: 14px;
-    max-height: 30px;
-    max-width: 50%;
+footer section:first-of-type ul:first-of-type li img {
+    width: 80%;
+    max-height: unset;
 }
 
-/*reclameblok3, 9 sponsors*/
+/*pijltjes voor de sponsors*/
+footer section:first-of-type ul:nth-of-type(2) li img:first-child {
+    width: 2em;
+    margin-right: 1em;
+}
+
+/*6 logo's naast pijltjes*/
+footer section:first-of-type img {
+    width: 45%;
+}
+
+/*reclameblok met 9 sponsors*/
 footer section:nth-of-type(2) {
-    padding-top: 20px;
-    border-top: 1px solid #808080;
-    width: 95%;
-    margin: 0 .6em;
+    width: 100%;
+    padding-top: 1.25em;
+    border-top: 0.0625em solid #808080;
 }
 
 footer section:nth-of-type(2) ul {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
 }
 
 footer section:nth-of-type(2) ul li {
-    flex-basis: 33%
+    padding: 1em;
 }
 
-footer section:nth-of-type(2) ul li img {
-    height: 64px;
-    width: 60px;
-    margin: .5em 1.7em 2em;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-/*reclameblok4, 2 sponsors*/
+/*reclameblok downloads*/
 footer section:nth-of-type(3) ul {
-    margin-left: 20px;
-    margin-right: 20px;
+    padding: 0 1.25em;
 }
 
 footer section:nth-of-type(3) ul li {
-    color: #FFFFFF;
-    font-size: 16px;
     font-family: Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    color: #FFFFFF;
     display: flex;
+}
+
+/*afbeelding apple*/
+footer section:nth-of-type(3) ul li:nth-of-type(2) img {
+    height: 2.5975em;
+    margin: 0.625em 0;
+}
+
+/*afbeelding google*/
+footer section:nth-of-type(3) ul li:nth-of-type(3) img {
+    height: 2.5975em;
+    margin-bottom: 1.875em;
+}
+
+/*reclameblok 3 rijen met links*/
+footer section:nth-of-type(4) {
+    padding: 0 1.25em;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer section:nth-of-type(4) ul {
+    width: calc(100%/3);
+}
+
+/*tekst*/
+footer section:nth-of-type(4) ul li a {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.8125em;
+    color: #808080;
+    display: flex;
+    text-decoration: none;
+}
+
+/*titel kopjes*/
+footer section:nth-of-type(4) ul li:first-of-type a {
+    font-size: 0.875em;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+    margin-bottom: 1.25em;
+}
+
+/*reclameblok nieuwsbrief*/
+footer section:nth-of-type(5) {
+    padding: 0 1.25em;
+}
+
+/*tekst nieuwsbrief*/
+footer section:nth-of-type(5) ul li a:first-of-type {
+    font-size: 1em;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+    margin: 0.25em 0 1.25em 0;
+    display: flex;
+    text-decoration: none;
+}
+
+footer section:nth-of-type(5) ul li {
+    display: flex;
+}
+
+footer section:nth-of-type(5) ul li:nth-of-type(2) input {
+    background-color: #3C3C3C;
+    border: none;
+}
+
+/*rood blokje*/
+footer section:nth-of-type(5) ul li img {
+    width: 2em;
+    height: 2em;
+}
+
+/*reclameblok website van het jaar*/
+footer section:nth-of-type(6) {
+    display: flex;
+    justify-content: center;
+}
+
+footer section:nth-of-type(6) img {
+    margin: 2.8125em 0 4.1875em 0;
+}
+
+/*reclameblok copyright*/
+footer section:nth-of-type(7) {
+    height: 3em;
+    background-color: #FFFFFF;
+    padding: 0 1.25em;
+    display: flex;
+    align-items: center;
+}
+
+footer section:nth-of-type(7) p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.75em;
+    color: #808080;
+}
+
+/*reclameblok voorwaarden*/
+footer section:nth-of-type(8) {
+    background-color: #EEEEEE;
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+}
+
+footer section:nth-of-type(8) ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
+    grid-gap: 0.2em;
     list-style-type: none;
 }
 
-footer section:nth-of-type(3) ul li:nth-of-type(2) img {
-    margin-top: 10px;
-    margin-left: 0;
-    width: 140px;
-    height: 41.56px;
-}
-
-footer section:nth-of-type(3) ul li:nth-of-type(3) img {
-    margin-top: 10px;
-    margin-bottom: 30px;
-    margin-left: 0;
-    width: 140px;
-    height: 41.56px;
+footer section:nth-of-type(8) ul li a {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.75em;
+    color: #808080;
+    text-decoration: none;
 }
